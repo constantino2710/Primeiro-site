@@ -10,55 +10,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Constantino</title>
 </head>
-<body>
-  <div id="container">
-      <div id="profile">
-        <img src="https://avatars.githubusercontent.com/u/112436573?v=4" alt="foto de jc">
-        <p>@j0a0_constantino</p>
-      </div>
-      <div id="switch" onclick="togglemode()">
-        <button>
 
-        </button>
-        <span>
+<header id="header">  
+  <nav>
 
-        </span>
-      </div>
-      <ul>
-        <li>
-          <a href="#">Sobre mim</a>
-        </li>
-        <li>
-          <a href="#">Acesse o meu portifólio</a>
-        </li>
-        <li>
-          <a href="#">entre em contato</a>
-        </li>
-      </ul>
-      <div id="social-links">
-        <a href="https://github.com/constantino2710" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
+    <div id="componente-header" class="componente-header">
+       <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#portifolio">Portfólio</a></li>
+          <li><a href="#contato">Entre em contato</a></li>
+       </ul>
+       <div id="switch" onclick="togglemode()">
+          <button></button>
+          <span></span>
+       </div>
+    </div>
+  </nav>
+</header>
 
-        </a>
-        <a href="https://www.instagram.com/j0a0_constantino/" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
+<main>
+  <section id="inicio"> inicio
 
-        <a href="https://www.youtube.com/channel/UCamCp29qavQe6KxRM_BnIZw" target="_blank">
-
-          <ion-icon name="logo-youtube"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-barreto-42a05224a/" target="_blank">
-
-          <ion-icon name="logo-linkedin"></ion-icon>
-
-        </a>
-      </div>
-      <footer>
-        Feito por: João Constantino
-      </footer>
-    </div>  
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <body>
+      <div id="container">
+          <div id="profile">
+            <img src="https://avatars.githubusercontent.com/u/112436573?v=4" alt="foto de jc">
+            <p>@j0a0_constantino</p>
+          </div>
+          
+          <!-- Os botões -->
+  
+          <ul id="componente-normal" class="componente-normal">
+            <li>
+              <a href="#">Sobre mim</a>
+            </li>
+            <li>
+              <a href="#">Acesse o meu portifólio</a>
+            </li>
+            <li>
+              <a href="#">entre em contato</a>
+            </li>
+          </ul>
+          <!-- Os links para as redes sociais -->
+  
+          <div id="social-links">
+            <a href="https://github.com/constantino2710" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+  
+            </a>
+            <a href="https://www.instagram.com/j0a0_constantino/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+  
+            <a href="https://www.youtube.com/channel/UCamCp29qavQe6KxRM_BnIZw" target="_blank">
+  
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-barreto-42a05224a/" target="_blank">
+  
+              <ion-icon name="logo-linkedin"></ion-icon>
+  
+          </a>
+        </div>
+      </div>  
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
+  </section>
+  <section id="sobre">Sobre mim</section>
+  <section id="portifolio">Veja o meu portifólio</section>
+  <section id="contato">Entre em contato comigo</section>
+</main>
+
+<!-- Esta é a página de início -->
+<section></section>
+
+<footer>
+  Feito por: João Constantino
+</footer>
 </html>

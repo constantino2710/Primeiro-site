@@ -22,6 +22,44 @@
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/Sun.svg);
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  min-height: 500px;
+}
+
+header {
+  box-shadow: 0px 2px 8px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+
+}
+
+#componente-header{
+  display: flex;
+  align-items: center;
+}
+
+#componente-header ul{
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+}
+#componente-header #switch{
+  justify-content: center;
+}
+
+.componente-header ul li a{
+  text-decoration: none;
+}
+
+
 body{
   background: var(--bg-url) no-repeat top center/cover;
 }
@@ -58,9 +96,11 @@ body *{
 /* switch */
 #switch{
   position: relative;
-  width: 64px;
-  margin: 4px auto;
+  cursor: pointer;
+  margin-left: auto;
+  display: flex;
 }
+
 #switch button{
   width: 32px;
   height: 32px;
@@ -72,6 +112,7 @@ body *{
   top: 50%;
   z-index: 1;
   animation: slide-out 0.4s forwards;
+  cursor: pointer;
 }
 
 .light #switch button {
@@ -104,7 +145,7 @@ ul{
   padding: 24px 0;
 }
 
-ul li a{
+.componente-normal li a{
   display: flex;
   justify-content: center;
   padding: 16px 24px;
@@ -120,9 +161,10 @@ ul li a{
 
 }
 
-ul li a:hover{
+.componente-normal :hover{
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color);
+  border: 1.5px solid var(--stroke-color);
+  border-radius: 10px;
 }
 #social-links{
 
