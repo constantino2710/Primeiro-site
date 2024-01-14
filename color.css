@@ -26,6 +26,7 @@
 html{
   scroll-behavior: smooth;
 }
+
 /* header da página */
 section{
   min-height: 500px;
@@ -34,29 +35,47 @@ section{
 header {
   box-shadow: 0px 2px 8px black;
   display: flex;
-  justify-content: center;
+  position: fixed;
+  justify-content: space-evenly;
   align-items: center;
-  margin-right: auto;
-
+  z-index: 99999;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  top: 0;
 }
 
 #componente-header{
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 #componente-header ul{
   list-style: none;
   display: flex;
-  gap: 16px;
   flex-direction: row;
+  justify-content: center;
 }
+
+#elementos-header{
+}
+
 #componente-header #switch{
   justify-content: center;
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
 }
 
 .componente-header ul li a{
   text-decoration: none;
+}
+
+main{
+  margin-top: 5rem;
 }
 
 
