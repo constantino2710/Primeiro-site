@@ -19,7 +19,7 @@ Primeiro projeto de site feito por mim <br/>
 <br>
 
 <p align="center">
-  <img alt="projeto JC" src="./assets/preview do site claro.png" width="100%">
+  <img alt="projeto JC" src="./assets/preview do site claro.png" width="100%">0 
 </p>
 
 ## 🚀 Tecnologias
