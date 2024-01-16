@@ -12,6 +12,7 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/MoonStars.svg);
+  --contraste: black;
 }
 .light{
   --text-color: black;
@@ -21,6 +22,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/Sun.svg);
+  --contraste: white;
 }
 
 
@@ -129,7 +131,7 @@ h4{
 }
 
 .txt-aboutme h2{
-  color: white;
+  color: var(--text-color);
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -139,7 +141,7 @@ h4{
 }
 
 .txt-aboutme p{
-  color: white;
+  color: var(--text-color);
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
@@ -147,7 +149,7 @@ h4{
 }
 
 .txt-aboutme h5{
-  color: white;
+  color: var(--text-color);
   font-size: 30px;
   text-transform: capitalize;
   margin-bottom: 25px;
@@ -156,13 +158,13 @@ h4{
 
 #contato {
   background-color: var(--text-color);
-  color: black;
+  color: var(--contraste);
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
   padding: 13px 30px;
   border-radius: 30px;
-  transition: .6s;
+  transition: .4s;
 }
 #contato:hover{
   background-color: var(--surface-color);
