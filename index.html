@@ -15,13 +15,12 @@
 
 <header id="header">  
   <nav>
-
+    
     <div id="componente-header" class="componente-header">
        <ul id="elementos-header">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre mim</a></li>
           <li><a href="#portifolio">Portfólio</a></li>
-          <li><a href="#contato">Entre em contato</a></li>
        </ul>
        <div id="switch" onclick="togglemode()">
           <button></button>
@@ -30,66 +29,69 @@
     </div>
   </nav>
 </header>
-
+  <!--Primeira secao da página o inicio-->
 <main>
   <section id="inicio"> 
-    
+    <div class="conteudo">
+      <h4><span>Olá, me chamo</span></h4>
+      <h1>João Constantino</h1>
+      <h3>Estudante atualmente do terceiro período de Ciencia da Computação na <span>UNICAP</span>.</h3>
+  </div>
 
-    <body>
-      <div id="container">
-          <div id="profile">
-            <img src="https://avatars.githubusercontent.com/u/112436573?v=4" alt="foto de jc">
-            <p>@j0a0_constantino</p>
-          </div>
-          
-          <!-- Os botões -->
-  
-          <ul id="componente-normal" class="componente-normal">
-            <li>
-              <a href="#">Sobre mim</a>
-            </li>
-            <li>
-              <a href="#">Acesse o meu portifólio</a>
-            </li>
-            <li>
-              <a href="#">entre em contato</a>
-            </li>
-          </ul>
-          <!-- Os links para as redes sociais -->
-  
-          <div id="social-links">
-            <a href="https://github.com/constantino2710" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-  
-            </a>
-            <a href="https://www.instagram.com/j0a0_constantino/" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-  
-            <a href="https://www.youtube.com/channel/UCamCp29qavQe6KxRM_BnIZw" target="_blank">
-  
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-            <a href="https://www.linkedin.com/in/jo%C3%A3o-barreto-42a05224a/" target="_blank">
-  
-              <ion-icon name="logo-linkedin"></ion-icon>
-  
-          </a>
-        </div>
-      </div>  
+  <body>
+       
       
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
+  <!--Segunda seção da página-->
   </section>
-  <section id="sobre">Sobre mim</section>
+  <section id="sobre"></section>
+  <div class="sobremim">
+    <img src="./assets/foto principal jc.jpg" alt="" id="foto-de-jc">
+    <div class="txt-aboutme" id="aboutme">
+        <h2>Sobre Mim</h2>
+        <h5>Atual studante e Futuro Desenvolvedor</h5>
+        <p>
+          Olá, sou João Constantino Pontes Barreto e nasci em 27/10/2004. 
+          Sou um entusiasta de tecnologia e sou <span>fascinado</span> pela área de desenvolvimento. 
+          Estudo Ciência da Computação na Unicap e já desenvolvo <span>desde setembro de 2023</span>, 
+          me mantenho sempre engajado em aprender cada vez mais sobre todo o universo de possibilidades na área da tecnologia.
+          Atualmente, meu foco está no desenvolvimento <span>Front-end</span> para web. Já utilizei a linguagem Flutter, porém, atualmente,
+          estou concentrado nas tecnologias HTML, CSS e JavaScript, e planejo explorar o React no futuro. Busco constantemente 
+          aprimorar-me e tornar-me um profissional <span>excelente</span>.
+        </p>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-barreto-42a05224a/" target="_blank"><button
+                type="button" id="contato"> Entre em contato</button></a>
+
+    </div>
+</div>
+</div>
+
   <section id="portifolio">Veja o meu portifólio</section>
-  <section id="contato">Entre em contato comigo</section>
 </main>
 
 <!-- Esta é a página de início -->
 <section></section>
 
 <footer>
-  Feito por: João Constantino
+  <div id="social-links">
+    <a href="https://github.com/constantino2710" target="_blank">
+      <ion-icon name="logo-github"></ion-icon>
+
+    </a>
+    <a href="https://www.instagram.com/j0a0_constantino/" target="_blank">
+      <ion-icon name="logo-instagram"></ion-icon>
+
+    <a href="https://wa.me/5581996918080" target="_blank">
+
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </a>
+    <a href="https://www.linkedin.com/in/jo%C3%A3o-barreto-42a05224a/" target="_blank">
+
+      <ion-icon name="logo-linkedin"></ion-icon>
+
+  </a>
+</div>
 </footer>
 </html>
