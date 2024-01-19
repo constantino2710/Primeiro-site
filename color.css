@@ -125,13 +125,14 @@ h4{
 
 .sobre{
   width: 100%;
-  padding: 100px 0px;
+  justify-content: center;
   background-color: black;
 }
 
 #foto-de-jc{
   height: auto;
-  width: 450px;
+  width: 430px;
+  justify-content: center;
 }
 
 .txt-aboutme h2{
@@ -178,23 +179,40 @@ h4{
 }
 /*profile*/
 .sobremim{
-  width: 1100px;
-  max-width: 95%;
+  width: 90%;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
 }
-@media(max-width: 750px){
+@media (min-width: 451px) and (max-width: 750px){
   .sobremim{
     max-width: 90%;
-    margin: 10 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 450px){
+
+  .txt-aboutme{
+    width: 80%;
+  }
+  .txt-aboutme h2{
+    font-size: 50px;
+  }
+  #foto-de-jc{
+    height: auto;
+    width: 400px;
+  }
+  .sobremim{
+    max-width: 90%;
+    display: block;
+    padding-left: 1rem;
+    align-items: center;
     flex-direction: column;
   }
 }
