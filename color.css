@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 :root {
@@ -14,6 +14,7 @@
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/MoonStars.svg);
   --contraste: black;
+  --destaque: yellow;
 }
 .light{
   --text-color: black;
@@ -24,6 +25,7 @@
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/Sun.svg);
   --contraste: white;
+  --destaque: #C78C5B;
 }
 
 
@@ -99,7 +101,7 @@ body *{
   transform: translateY(-50%);
 }
 span{
-  color: yellow;
+  color: var(--destaque);
 }
 
 h1{
